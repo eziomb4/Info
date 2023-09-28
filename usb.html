@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Selection and Media Playback</title>
+</head>
+<body>
+    <input type="file" id="fileInput" multiple>
+    <ul id="fileList"></ul>
+    <audio controls id="audioPlayer"></audio>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        fileInput.addEventListener('change', (event) => {
+            fileList.innerHTML = ''; // Clear previous file list
+
+            const files = event.target.files;
+            for (const file of files) {
+                const li = document.createElement('li');
+                li.textContent = `${file.name} (${file.size} bytes)`;
+                fileList.appendChild(li);
+            }
+        });
+
+        fileList.addEventListener('click', (event) => {
+            if (event.target.tagName === 'LI') {
+                const fileName = event.target.textContent.split(' ')[0];
+                const fileURL = URL.createObjectURL(files.find(file => file.name === fileName));
+                audioPlayer.src = fileURL;
+            }
+        });
+    </script>
+</body>
+</html>

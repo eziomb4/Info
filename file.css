@@ -1,0 +1,6 @@
+.play{
+    display: flex;
+    /* justify-content: center; */
+    align-content: center;
+    background: linear-gradient(rgb(52, 52, 62),rgb(0, 0, 0));
+}

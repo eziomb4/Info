@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Sedgwick+Ave+Display&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.MainContainer{
+    width: 800px;
+    height: 480px;
+}
+#container{
+    width: 800px;
+    height: 480px;
+    /* position: relative; */
+    top: 90px;
+    background: linear-gradient(rgb(13, 6, 28),rgb(5, 50, 74));
+}
+#CarName{
+    color: white;
+    position: relative;
+    top: -15px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    /* animation-name: Carname;
+    transition: all 2s ease-in-out; */
+}
+.HeadBorder{
+    border-top: 2px solid red;
+    top: 58px;
+    position: relative;
+}
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;   
+    /* align-items: center; */
+}
+#nav a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: whitesmoke;
+    /* transition: all 2s ease-in-out; */
+}
+.FootBorder{
+    border-bottom: 2px red solid;
+    display: flex;
+}
+.butcont{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(rgb(8, 16, 47),rgb(5, 16, 39));
+    height: 46px;
+}
+/* Backward Button */
+.but-1{
+    background-color: transparent;
+    fill: wheat;
+    border: none;
+    padding: 22px 20px;  
+    background-image: url(Button/32back.png);
+    background-position-x: 37px;
+    background-position-y: 4px;
+    cursor: pointer;
+}
+/* Home Button */
+.but-2{
+    background-color: transparent;
+    border: none;
+    padding: 22px 20px; 
+    background-image: url(Button/hometr.png);
+    background-position-y: -35px; 
+    background-position-x: 1px;
+    cursor: pointer;
+}
+/* Forward Button */
+.but-3{
+    background-color: transparent;
+    border: none;
+    padding: 22px 20px; 
+    background-image: url(Button/32for.png);
+    background-position-x: 1px;
+    background-position-y: 4px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
