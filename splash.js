@@ -7,6 +7,6 @@
 
 document.addEventListener("DOMContentLoaded",function(){
 setTimeout(function(){
-    window.location.href="Weather/main.html";
+    window.location.href="main.html";
 },8000)
  });
