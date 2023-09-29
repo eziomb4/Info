@@ -22,7 +22,7 @@ function youtube(){
 function home() {
     alert("Press Home");
 }
-let backward = document.querySelector('Backward').onclick=function(){
+let backward = document.querySelector('#Backward').onclick=function(){
     location.href="secondpage.html"
 }
 document.getElementById("Forward").onclick= function() {
