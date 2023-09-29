@@ -27,7 +27,9 @@
     position: relative;
 }
 #nav{
-    display: flex;
+    position: relative;
+    top: 40px;
+    /* display: flex; */
     justify-content: space-evenly;
     flex-direction: column;   
     /* align-items: center; */
@@ -37,6 +39,8 @@
     font-size: 25px;
     padding: 30px;
     text-decoration: none;
+    position: relative;
+    top: -377px;
     display: flex;
     justify-content: space-evenly;
     color: whitesmoke;
@@ -51,6 +55,22 @@
     justify-content: space-evenly;
     background: linear-gradient(rgb(8, 16, 47),rgb(5, 16, 39));
     height: 46px;
+}
+.time{
+    color: rgb(103, 11, 54);
+    background : linear-gradient(rgba(71, 25, 136, 0.437),rgba(11, 87, 132, 0.727));
+    position: relative;
+    display: flex; 
+    left: 31px;
+    box-shadow: 2px 2px 9px 1px;
+    border-radius: 15px;
+     width: 256px;
+    height: 319px; 
+    top: 23px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+     /* border: 2px solid red; */
 }
 /* Backward Button */
 .but-1{

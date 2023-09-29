@@ -21,15 +21,29 @@
     cursor: pointer;
 }
 .FootBorder{
+    position: relative;
     border-bottom: 2px red solid;
     display: flex;
 }
 .butcont{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background: linear-gradient(rgb(8, 16, 47),rgb(5, 16, 39));
     height: 46px;
+    bottom: 9px;
+}
+.navbar{
+    position: relative;
+    background-color: none;
+    bottom: 90px;
+    text-decoration: none;
+    /* display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+     */
 }
 /* Backward Button */
 .but-1{
