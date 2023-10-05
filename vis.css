@@ -9,34 +9,33 @@
     height: 480px;
     /* position: relative; */
     top: 90px;
-    background: linear-gradient(rgb(142, 159, 202),rgb(185, 157, 162));
+    background: linear-gradient(rgb(13,148,148),rgb(115,134,120));
 }
 #CarName{
-    color: white;
+    color: #232023;
     position: relative;
     top: -15px;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    transition: 3s;
+    /* transition: 3s; */
     /* animation-name: Carname;
     transition: all 2s ease-in-out; */
 }
 .HeadBorder{
-    border-top: 2px solid red;
-    top: 58px;
+    border-top: 2px solid white;
+    top: 51px;
     position: relative;
 }
 #nav{
     position: relative;
     top: 40px;
     padding: 40px 30px;
-    
 }
-
 .home{
     border: none;
-    color: rgb(110, 31, 59);
+    color: black;
+    /* color: rgb(110, 31, 59); */
     border-radius: 7px;
     font-size: 40px;
     box-shadow: 2px4px 6px 8px; 
@@ -48,7 +47,8 @@
 }
 .navigation{
     border: none;
-    color: rgb(110,31,59);
+    color: black;
+    /* color: rgb(110,31,59); */
     border-radius: 7px;
     font-size: 40px;
     /* box-shadow: 2px 3px 4px 1px; */
@@ -61,7 +61,8 @@
 .connect{
     border: none;
     font-size: 40px;
-    color: rgb(110,31,59);
+    color: black;
+    /* color: rgb(110,31,59); */
     border-radius: 7px;
     /* box-shadow: 2px 3px 4px 1px; */
     background : none;
@@ -73,7 +74,8 @@
 .more{
     border: none;
     font-size: 40px;
-    color: rgb(110,31,59);
+    color: black;
+    /* color: rgb(110,31,59); */
     border-radius: 7px;
     /* box-shadow: 2px 3px 4px 1px; */
     background : none;
@@ -83,19 +85,20 @@
     cursor: pointer;
 }
 .FootBorder{
-    border-bottom: 2px red solid;
+    border-bottom: 2px white solid;
     display: flex;
 }
 .butcont{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background: linear-gradient(rgba(76, 79, 92, 0.474),rgba(95, 101, 112, 0.26));
+    background: rgb(46, 42, 42);
+    /* background: linear-gradient(rgba(32,43,62),rgb(63, 68, 78)); */
     height: 46px;
 }
 .time{
-    color: rgb(103, 11, 54);
-    background : linear-gradient(rgba(71, 25, 136, 0.437),rgba(11, 87, 132, 0.727));
+    /* color: rgb(103, 11, 54); */
+    background : linear-gradient(rgba(62, 41, 92, 0.437),rgba(32, 63, 81, 0.727));
     position: relative;
     display: flex; 
     left: 31px;
@@ -108,6 +111,24 @@
     flex-direction: column;
     align-items: center;
      /* border: 2px solid red; */
+}
+.search{
+   color: azure;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: medium;
+   background: none;
+   border: none;
+   box-shadow: 1px 1px 5px 1px;
+   border-radius: 7%; 
+}
+.searchbtn{
+    background : none;
+    border: none;
+    color: azure;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    box-shadow: 1px 1px 5px 1px;
+    border-radius: 7px;
 }
 
 /* Backward Button */
