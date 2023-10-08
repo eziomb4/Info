@@ -27,61 +27,47 @@
     top: 51px;
     position: relative;
 }
-#nav{
-    position: relative;
-    top: 40px;
-    padding: 40px 30px;
-}
 .home{
     border: none;
-    color: black;
-    /* color: rgb(110, 31, 59); */
-    border-radius: 7px;
-    font-size: 40px;
-    box-shadow: 2px4px 6px 8px; 
-    background : none;
+    padding: 32px;
+    background-image: url("Icons/Home\ Button.png");
+    border-radius: 18px;
+    box-shadow: 2px 2px 7px 3px; 
     position: relative;
-    bottom : 360px;
-    left: 340px;
+    bottom : 293px;
+    left: 451px;
     cursor: pointer;
 }
 .navigation{
     border: none;
-    color: black;
-    /* color: rgb(110,31,59); */
-    border-radius: 7px;
-    font-size: 40px;
-    /* box-shadow: 2px 3px 4px 1px; */
-    background : none;
+    padding: 32px;
+    background-image: url("Icons/location.png");
+    border-radius: 18px;
+    box-shadow: 2px 2px 7px 3px;
     position: relative;
-    bottom : 340px;
-    left: 285px;
+    bottom : 249px;
+    left: 450px; 
     cursor: pointer;
 }
 .connect{
     border: none;
-    font-size: 40px;
-    color: black;
-    /* color: rgb(110,31,59); */
-    border-radius: 7px;
-    /* box-shadow: 2px 3px 4px 1px; */
-    background : none;
+    padding: 32px;
+    background-image: url("Icons/Connect.png");
+    border-radius: 17px;
+    box-shadow: 2px 2px 7px 3px;
     position: relative;
-    bottom : 320px;
-    left: 310px;
-    cursor: pointer;
+    bottom : 420px;
+    left: 620px; 
 }
 .more{
     border: none;
-    font-size: 40px;
-    color: black;
-    /* color: rgb(110,31,59); */
-    border-radius: 7px;
-    /* box-shadow: 2px 3px 4px 1px; */
-    background : none;
+    padding: 32px;
+    background-image: url("Icons/menu(1).png");
+    border-radius: 18px;
+    box-shadow: 2px 2px 7px 3px;
     position: relative;
-    bottom : 300px;
-    left: 340px;
+    bottom : 375px;
+    left: 616px; 
     cursor: pointer;
 }
 .FootBorder{
@@ -104,7 +90,7 @@
     left: 31px;
     box-shadow: 2px 2px 9px 1px;
     border-radius: 15px;
-     width: 256px;
+    width: 256px;
     height: 319px; 
     top: 23px;
     justify-content: space-evenly;
@@ -130,7 +116,6 @@
     box-shadow: 1px 1px 5px 1px;
     border-radius: 7px;
 }
-
 /* Backward Button */
 .but-1{
     background-color: transparent;
