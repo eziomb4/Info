@@ -26,6 +26,6 @@ let back = document.querySelector('.forward');// Due some error forward is actua
 let home = document.querySelector('.home');
     home.addEventListener('click',function(){
         alert("Pressed HOme");
-        location.href = "First Page/main.html";
+        location.href = "Info/main.html";
 
     });

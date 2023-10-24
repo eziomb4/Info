@@ -8,9 +8,10 @@ let homee = document.querySelector(".home");
  homee.addEventListener('click',function(){
  alert("Homeee");
   });
-let navigation = document.querySelector(".navigation");
-  navigation.addEventListener('click',function(){
-  alert("Navigation");
+let navigation = document.getElementById("navigation").addEventListener('click',function(){
+    alert("Navigation Pressed");
+  location.replace("https://www.google.com/maps");
+let map = "https://www.google.com/maps";
   });
 let connect = document.querySelector(".connect");
   connect.addEventListener('click',function(){
@@ -21,6 +22,9 @@ let more = document.querySelector(".more");
   alert("More");
   location.href="File Explorer/main.html";
   });
+
+  let carname = document.getElementById('CarName').innerHTML = "<h1>ASHWAMEGHA</h1>";
+
 
 // let Time = document.querySelector('.time'); 
 // function printtime(){
@@ -56,21 +60,20 @@ document.getElementsByClassName("More").onclick= function(){
 
 
 // Weather Detail 
-const api_key = "25ab478e79e0c9e70215e814ca7e1b00";
-const api_url = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=&units=metric";
-const cityname= document.querySelector('.search');
-const search = document.querySelector('.searchbtn');
+const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
+const api = `bd06176ba8ae2dffef62796b4c29c3d8`;
+const searchbox = document.querySelector(".search input");
+const searchbtn = document.querySelector(".search button");
 
-//https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={25ab478e79e0c9e70215e814ca7e1b00}
-async function checkWeather(cityname){
-    const response = await fetch(api_url + cityname + `&appid=${api_key}`);
+async function checkWeather(city){
+    const response = await fetch(url + city + `&appid=${api}`);
     var data = await response.json();
-
     console.log(data);
-    document.querySelector('.cityname').innerHTML = data.name;
-    
-    document.querySelector('.temp').innerHTML = Math.round(data.main.temp);
+    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+    document.querySelector(".city").innerHTML = data.name;
 }
 searchbtn.addEventListener("click", ()=>{
-    checkWeather(cityname.value);
+    checkWeather(searchbox.value);
 })
+
+checkWeather();

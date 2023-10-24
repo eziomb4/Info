@@ -48,7 +48,7 @@
     left: 22px;
     cursor: pointer;
 }
-.navigation{
+#navigation{
     border: none;
     padding: 32px;
     background-image: url("Icons/location.png");
@@ -92,7 +92,7 @@
     /* background: linear-gradient(rgba(32,43,62),rgb(63, 68, 78)); */
     height: 46px;
 }
-.time{
+.card{
     /* color: rgb(103, 11, 54); */
     background : linear-gradient(rgba(62, 41, 92, 0.437),rgba(32, 63, 81, 0.727));
     position: relative;
@@ -119,12 +119,32 @@
 }
 .searchbtn{
     background : none;
-    border: none;
+    position: relative;
+    
+    background-image: url("Icons/search.png");
+    background-repeat: none;
+    padding: 13px 13px;
     color: azure;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: medium;
     box-shadow: 1px 1px 5px 1px;
     border-radius: 7px;
+}
+.input{
+    background : none;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius : 17px;
+}
+.temp{
+    color: white;
+}
+.city{
+    color: whitesmoke;
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 /* Backward Button */
 .but-1{

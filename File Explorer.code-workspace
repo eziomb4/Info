@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../File Explorer"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Navigation"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Info"
+	}
+}
